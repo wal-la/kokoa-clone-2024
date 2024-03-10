@@ -9,9 +9,6 @@ body{
     font-family: "Rokkitt", serif;
     color: #252525;
 }
-.base-page{
-
-}
 .welcome-box {
     display: flex;
     height: 450px;
@@ -78,19 +75,15 @@ margin-left: -10px;
     color: #9e9e9e;
     height: 20px;
 }
-.login__icon-box{
-    background-color: #a7a3a3;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    transform: translateX(-1.5px);
+.fa-circle-info{
+    font-size: 18px;
+    color: #9e9e9e;
 }
 
 .login__auto-icon{
-    font-size: 8pt;
-    color: #ffffff;
-    display: flex;
-    transform: translateX(8px);
+    width: 10px;
+    height: 10px;
+
 }
 .login__auto-warning{
     position: absolute;
@@ -100,21 +93,12 @@ margin-left: -10px;
     color: aliceblue;
     font-size: 12pt;
     bottom: 180.9px;
+    display: none;
 }  
 
-@keyframes blink {
-    0% { color: #ffffff; } 
-    50% {  color: #9e9e9e; } 
-    100% { color: #ffffff; } 
-}
-.login__auto-icon{
-    animation: blink 1s infinite;}
 
-.login__auto-warning{
-    display: none;
-} 
 
-.login__icon-box:hover + .login__auto-warning{
+.login__auto-icon:hover + .login__auto-warning{
     display: block;
 }
 
@@ -142,3 +126,7 @@ a{
     text-decoration: none;
 }
 
+.no-mobile__arrow{
+    transform: rotate(-35deg);
+    margin-top: 50px;
+}

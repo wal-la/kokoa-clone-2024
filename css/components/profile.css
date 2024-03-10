@@ -1,0 +1,27 @@
+.profile{
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+    margin-left: 10px; 
+
+}
+
+.profile_photo{
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+.profile-me{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+box-sizing: border-box;
+padding-left: 14px;
+}
+
+.profile__name{
+    font-size: 36px;
+}
+

@@ -1,0 +1,44 @@
+.menu-bottom{
+    position: fixed;
+    display: flex;
+    background-color: #252525;
+    height: 88px;
+    width: 100vw;
+    justify-content: space-around;
+    font-size: 35px;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+color:aliceblue;
+    
+}
+
+.menu-friends{
+    border-bottom: #252525 solid;
+    display: flex;
+    font-size: 20px;
+    background-color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+
+.menu-top__icon{
+    display: flex;
+    font-size: 28px;
+    justify-content: space-between;
+    align-self: center;
+
+}
+.fa-music{
+    padding: 0px 36px;
+}
+
+.menu-friends__subtitle{
+margin-left: 15px;
+border-top: 1px rgb(207, 207, 207) solid;
+padding: 18px 0px;
+}
+

@@ -1,14 +1,74 @@
 .fa-arrow-left {
-    animation: bumping-left 0.8s ease-in-out infinite;}
+    animation: bumping-left 0.8s ease-in-out infinite;
+}
+
 .fa-arrow-right {
-        animation: bumping-right 0.8s ease-in-out infinite;}
-@keyframes bumping-left{
-0% {transform: translateX(0px);}
-75% {transform: translateX(30px);}
-100% { transform: translateX(0px)}
-} 
-@keyframes bumping-right{
-    0% {transform: translateX(0px);}
-    75% {transform: translateX(-30px);}
-    100% { transform: translateX(0px)}
+    animation: bumping-right 0.8s ease-in-out infinite;
+}
+
+@keyframes bumping-left {
+    0% {
+        transform: translateX(0px);
     }
+
+    75% {
+        transform: translateX(30px);
+    }
+
+    100% {
+        transform: translateX(0px)
+    }
+}
+
+@keyframes bumping-right {
+    0% {
+        transform: translateX(0px);
+    }
+
+    75% {
+        transform: translateX(-30px);
+    }
+
+    100% {
+        transform: translateX(0px)
+    }
+}
+
+/* <i class="fa-solid fa-circle-info fa-shake"></i> 
+    흔들리는 인포*/
+
+.messege-notice {
+    position: fixed;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    bottom: 45px;
+    left: 215px;
+    animation: moving 1s ease-in-out infinite;
+}
+
+@keyframes moving {
+    0% {
+        transform: translateX(1px)
+        translateY(2px);
+    }
+
+    25% {
+        transform: translateX(-2px);
+    }
+
+    50% {
+        transform: translateX(1px)
+        scale(1.2);
+    }
+}
+.messege-notice-two{
+    position: fixed;
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    top: 57px;
+    right: 16px;
+}

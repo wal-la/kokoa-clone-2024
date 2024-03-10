@@ -1,7 +1,11 @@
-.base-page{
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
+
+.base-page {
+    position: fixed;
     background-color: white;
-    padding: 12px 40px;
-    color: #252525;
-    height: 100vh;
+    top: 30px;
+    left: 0;
     width: 100vw;
+    color: #252525;
+    font-family: "Rokkitt", serif;
 }

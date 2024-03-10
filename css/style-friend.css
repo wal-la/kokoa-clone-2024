@@ -1,0 +1,24 @@
+@import "css/reset.css";
+@import "components/base-page.css";
+@import "components/status-bar.css";
+@import "components/no-mobile.css";
+@import "components/animation.css";
+@import "components/menu.css";
+@import "components/profile.css";
+
+body{
+    font-family: "Rokkitt", serif;
+    background-color: aqua;
+    font-family: "Rokkitt", serif;
+    color: #252525;
+    width: 100vw;
+ 
+}
+
+ul, li{
+    list-style-type: none;
+    padding: 0px 6px;
+}
+.base-page{
+    overflow-y: scroll;
+}
