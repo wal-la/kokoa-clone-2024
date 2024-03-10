@@ -1,29 +1,70 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Kokoa Talk</title>
-    <script src="https://kit.fontawesome.com/805f4702f2.js" crossorigin="anonymous"></script>
+    <title>Welcome to Kokoa Clone</title>
     <link rel="stylesheet" href="css/style.css">
-    
+    <script src="https://kit.fontawesome.com/805f4702f2.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+
+
 </head>
+
 <body>
     <div id="status-bar">
-        <div calss="status-bar__column">
+        <div class="status-bar__column">
             <span>No Service</span>
             <i class="fa-solid fa-ban"></i>
         </div>
-        <div calss="status-bar__column">
-            <span>07:42</span>
+        <div class="status-bar__column">
+            <span>19:42</span>
         </div>
-        <div calss="status-bar__column">
+        <div class="status-bar__column">
             82%
             <i class="fa-solid fa-battery-three-quarters"></i>
             <i class="fa-solid fa-bolt fa-xs"></i>
         </div>
     </div>
 
+    <header class="welcome-header">
+        <h1>Welcome to Talk</h1>
+    </header>
+
+    <div class="login-form">
+        <form>
+            <input required type="text" placeholder="Email or Phone number" />
+            <input required type="password" placeholder="password" />
+            <input type="submit" value="Log In" />
+            <div class="login__auto">
+                <input type="checkbox" />
+                <label for="checkbox">Remember my account</label>
+                <div class="login__auto-exp">
+                    <i class="fa-solid fa-info fa-xs"></i>
+                </div>
+            </div>
+        </form>
+        <div class="login-link">
+            <a href="#">Sign Up</a>
+            <div class="login-link__find">
+                <a href="#">Find Account</a>
+                <a href="#">Find Password</a>
+            </div>
+        </div>
+    </div>
+    <div id="no-mobile">
+        <span>Your screen is too big.:-O</span>
+        <span>Please reduce the screen size.</span>
+        <span class="no-mobile__icons">
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+  
+        </span>
+    </div>
 </body>
+
 </html>

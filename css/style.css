@@ -1,7 +1,136 @@
 @import "css/reset.css";
+@import "components/root.css";
+@import "components/status-bar.css";
 
-body{
-    background-color: rgb(184, 184, 204);
+
+body {
+    background-color: white;
     font-family: "Rokkitt", serif;
+    /* font-family: var(--main-font); */
+    color: #252525;
+    height: 100vh;
+    width: 100vw;
 }
 
+
+    
+
+.welcome-header {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    padding: 10px 40px;
+}
+
+h1 {
+    margin: 0px;
+    margin-top: 15px;
+}
+
+.welcome-header>p {
+    font-size: 12pt;
+    text-align: center;
+    color: #666666;
+}
+#login{
+    background-color: #252525;
+    padding: 0 12px ;
+    border-radius: 20px 20px 0 0;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+
+}
+.login__user-info{
+    height: 30px;
+    border: none;
+    border-bottom:1px solid #a7a3a3;
+    margin-bottom: 8px;
+    background-color: #252525;
+    width: 250px;
+    padding: 8px 0px;
+}
+::placeholder{
+    color: #dad7d7;
+}
+input:focus{
+    outline: none;
+}
+
+.login__button{
+    background-color: #ffffff;
+    margin-top: 30px;
+    border-radius: 30px;
+    width: 210px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.login__auto{
+    color: #666666;
+    display: flex;
+    width: 250px;
+    gap: 9px;
+    align-items: center;
+    position: relative;
+}
+.login__auto-exp{
+    background-color: #484848;
+    width: 16px;
+    height: 15px;
+    border-radius: 10px;
+    border: 1px solid #7a7a7a;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    padding-top: 2px;
+    color: #ffffff;
+}
+.login-link{
+display: flex;
+width:374px;
+justify-content: space-between;
+color: #7a7a7a;
+}
+a {
+    color: #7a7a7a;
+    text-decoration: none;
+}
+
+.login__auto-warning{
+    position: absolute;
+    top: 30px;
+    background-color: #777777;
+    border-radius: 10px;
+padding: 10px;
+    color: aliceblue;
+    font-size: 12pt;
+    top: 25px
+}
+@keyframes blink {
+    0% { color: #ffffff; } 
+    50% {  color: #9e9e9e; } 
+    100% { color: #ffffff; } 
+}
+.warning{
+    animation: blink 1s infinite;}
+
+.login__auto-warning{
+    display: none;
+}
+
+.login__auto-exp:hover + .login__auto-warning{
+    display: block;
+}
