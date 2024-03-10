@@ -1,22 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Kokoa Clone</title>
+    <title>Welcome to DoL</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/805f4702f2.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
-
-
 </head>
 
+
+
 <body>
-    <div id="status-bar">
+
+    <div class="status-bar">
         <div class="status-bar__column">
             <span>No Service</span>
             <i class="fa-solid fa-ban"></i>
@@ -25,46 +25,64 @@
             <span>19:42</span>
         </div>
         <div class="status-bar__column">
-            82%
+            <span>82%</span>
             <i class="fa-solid fa-battery-three-quarters"></i>
             <i class="fa-solid fa-bolt fa-xs"></i>
         </div>
     </div>
+    <!-- 스테이터스바 끝 -->
+    <div class="base-page">
+        <header class="welcome-box">
+            <img class="logo-main"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsxIVQqv_A2UEJENqRfEA5TbTEV5AzTxSI1Hsn0zNwVSevHUZ_" />
+            <h1>Welcome to DoL</h1>
+            <p>If you have a DoL Account,</br>
+                log in with your email or phone number.
+            </p>
+        </header>
+        <!-- 헤더 끝 -->
 
-    <header class="welcome-header">
-        <h1>Welcome to Talk</h1>
-    </header>
+        <form class="login">
+            <input class="login__user-info" required type="email" placeholder="Email or Phone number" />
+            <input class="login__user-info" required type="password" placeholder="Password" minlength="10" />
 
-    <div class="login-form">
-        <form>
-            <input required type="text" placeholder="Email or Phone number" />
-            <input required type="password" placeholder="password" />
-            <input type="submit" value="Log In" />
             <div class="login__auto">
-                <input type="checkbox" />
-                <label for="checkbox">Remember my account</label>
-                <div class="login__auto-exp">
-                    <i class="fa-solid fa-info fa-xs"></i>
+                <div class="checkbox">
+                    <input class="login__auto--checkbox" type="checkbox" />
+                    <label for="checkbox">Remember my account</label>
+                </div>
+                <div class="login__icon-box">
+                    <i class="login__auto-icon fa-solid fa-info"></i>
+                </div>
+                <span class="login__auto-warning">For privacy protection,</br> please use on personal PC only.</span>
+            </div>
+            <input class="login__button" type="submit" value="LOG IN" />
+            <div class="account-link">
+                <div class="account-link__sign-up">
+                    <a href="#">Sign Up</a>
+                </div>
+                <div class="acccount-link__find">
+                    <a href="#">Find Account</a>
+                    <span>|</span>
+                    <a href="#">Find Password</a>
                 </div>
             </div>
+
         </form>
-        <div class="login-link">
-            <a href="#">Sign Up</a>
-            <div class="login-link__find">
-                <a href="#">Find Account</a>
-                <a href="#">Find Password</a>
+
+
+        <div id="no-mobile">
+            <span>Your screen is too big :-0</span>
+            <span>Please reduce the screen size.</span>
+            <div class="no-mobile__arrow">
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
             </div>
         </div>
-    </div>
-    <div id="no-mobile">
-        <span>Your screen is too big.:-O</span>
-        <span>Please reduce the screen size.</span>
-        <span class="no-mobile__icons">
-            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-  
-        </span>
-    </div>
+
+
+
+
 </body>
 
 </html>

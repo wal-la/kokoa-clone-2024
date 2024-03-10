@@ -2,9 +2,8 @@
 .status-bar {
     display: flex;
     position: fixed;
-    width: 100%;
+    width: 96.91%;
     background-color: #9e9e9e;
-
 }
 
 .status-bar__column {

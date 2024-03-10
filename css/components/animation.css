@@ -1,0 +1,14 @@
+.fa-arrow-left {
+    animation: bumping-left 0.8s ease-in-out infinite;}
+.fa-arrow-right {
+        animation: bumping-right 0.8s ease-in-out infinite;}
+@keyframes bumping-left{
+0% {transform: translateX(0px);}
+75% {transform: translateX(30px);}
+100% { transform: translateX(0px)}
+} 
+@keyframes bumping-right{
+    0% {transform: translateX(0px);}
+    75% {transform: translateX(-30px);}
+    100% { transform: translateX(0px)}
+    }
