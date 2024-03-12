@@ -37,14 +37,14 @@
 /* <i class="fa-solid fa-circle-info fa-shake"></i> 
     흔들리는 인포*/
 
-.messege-notice {
+.messege {
     position: fixed;
     background-color: red;
     width: 20px;
     height: 20px;
     border-radius: 10px;
     bottom: 45px;
-    left: 215px;
+    left: 39%;
     animation: moving 1s ease-in-out infinite;
 }
 

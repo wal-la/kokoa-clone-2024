@@ -6,19 +6,41 @@
 @import "components/menu.css";
 @import "components/profile.css";
 
-body{
+body {
     font-family: "Rokkitt", serif;
     background-color: aqua;
     font-family: "Rokkitt", serif;
     color: #252525;
-    width: 100vw;
- 
 }
 
-ul, li{
+.base-page {
+    height: 880px;
+    overflow-y: scroll;
+}
+a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+ul,
+li {
     list-style-type: none;
     padding: 0px 6px;
 }
-.base-page{
-    overflow-y: scroll;
+
+.fa-comment{
+margin-top: 25px;
+}
+.messege{
+    display: flex;
+    font-size: large;
+    background-color: red;
+    width: 25px;
+    height: 25px;
+    border-radius: 13px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 42px;
+    left: 24px;
 }
